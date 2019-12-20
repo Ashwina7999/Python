@@ -1,0 +1,38 @@
+print("Enter the car name :")
+a=input()
+print("Enter the initial speed given :")
+b=int(input())
+print("Enter your maximum lane speed limit: ")
+c=int(input())
+print("options: ")
+print("1.increase speed by 10kms")
+print("2.decrease speed by 10kms")
+print("3.exit")
+while(1):
+    print("Enter your option:")
+    g=int(input())
+    if(g==1):
+        if(b>c):
+            print("Your car was in speed 0kms")
+            b=0
+            break
+        elif(b==c):  
+            print("Your car was already in top position. so the car was stopped to 0kms")
+            b=0
+        else:
+            b=b+10
+            print("Your car was running in {} kms" .format(b))
+    elif(g==2):
+        if(b>=10):
+            b=b-10
+            print("Your car was running in {} kms" .format(b))
+        else:
+            print("The car was at speed 0kms")
+            b=0
+    elif(g==3):
+        print("The program was stopped by selecting option 3")
+        exit()
+
+        
+    
+    
