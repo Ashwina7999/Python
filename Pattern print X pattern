@@ -1,0 +1,27 @@
+n=int(input())
+a=n*2-1
+for i in range(a):
+    for j in range(a):
+        if(i==j):
+            print("*",end="")
+        elif(i+j==a-1):
+            print("*",end="")
+        else:
+            print(end=" ")
+    print()        
+
+'''
+
+OUTPUT:
+
+4
+
+*     *
+ *   * 
+  * *  
+   *   
+  * *  
+ *   * 
+*     *
+
+'''
