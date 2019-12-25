@@ -1,0 +1,25 @@
+a=int(input())
+if(a>=0 and a<=5):
+    print("The fine is Rs.0.50")
+elif(a>5 and a<=10):
+    print("The fine is Rs.1")
+elif(a>11 and a<=30):
+    print("The fine is Rs.5")
+elif(a>30):
+    print("Membership is cancelled")
+
+'''
+TEST CASE 1:
+1
+
+OUTPUT:
+
+The fine is Rs.0.50
+
+TEST CASE 2:
+35
+
+OUTPUT:
+
+Membership is cancelled
+'''
