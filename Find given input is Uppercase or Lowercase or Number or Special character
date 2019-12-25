@@ -1,0 +1,19 @@
+a=input()
+if(a.isupper()==True):
+    print("Uppercase character")
+elif(a.islower()==True):
+    print("Lowercase character")
+elif(a.isdigit()==True):
+    print("Number")
+else:
+    print("Special character")
+    
+'''
+Test case 1:
+d
+
+
+OUTPUT:
+Lowercase character
+
+''
