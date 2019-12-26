@@ -1,0 +1,24 @@
+print("Enter Name, Age, Quantity, Price:")
+a=input()
+b=int(input())
+c=int(input())
+d=float(input())
+print("Name:",a)
+print("Age:",b)
+print("Quantity:",c)
+print("Price: Rs.",d)
+
+'''
+TEST CASE 1:
+Krishna
+34
+5
+43.87
+
+OUTPUT:
+Enter Name, Age, Quantity, Price:
+Name: Krishna
+Age: 34
+Quantity: 5
+Price: 43.87
+'''
