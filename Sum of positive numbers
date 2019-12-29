@@ -1,0 +1,32 @@
+PROGRAM 1:
+
+n=int(input())
+list1=[]
+for i in range(n):
+    a=int(input())
+    if(a>0):
+        list1.append(a)
+print("The sum of the positive numbers in the array is {}".format(sum(list1)))    
+
+
+PROGRAM 2:
+n=int(input())
+sum1=0
+for i in range(n):
+    a=int(input())
+    if(a>0):
+        sum1+=a
+print("The sum of the positive numbers in the array is",sum1)    
+
+'''
+TEST CASE 1:
+5
+9
+8
+3
+3
+4
+
+OUTPUT:
+The sum of the positive numbers in the array is 27
+'''
