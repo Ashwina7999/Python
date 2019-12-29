@@ -1,0 +1,37 @@
+n=int(input())
+for i in range(n):
+    a=int(input())
+    sum1=0
+    if(a<0):
+        a=a*-1
+        while(a):
+            b=a%10
+            a=a//10
+            sum1+=b
+        print(-sum1)
+    else:
+        while(a):
+            b=a%10
+            a=a//10
+            sum1+=b
+        print(sum1)
+       
+'''
+TEST CASE 1:
+1
+123
+
+OUTPUT:
+6
+
+TEST CASE 2:
+3
+89
+-568
+245
+
+OUTPUT:
+17
+-19
+11
+'''
