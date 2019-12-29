@@ -1,0 +1,26 @@
+n=int(input())
+for i in range(n):
+    a=int(input())
+    n1=0
+    print(n1,end=" ")
+    n2=1
+    print(n2,end=" ")
+    i=2
+    while(i<a):
+        n3=n1+n2
+        print(n3,end=" ")
+        n1=n2
+        n2=n3
+        i=i+1
+    print()   
+    
+'''
+TEST CASE 1:
+2
+5
+10
+
+OUTPUT:
+0 1 1 2 3 
+0 1 1 2 3 5 8 13 21 34 
+'''
