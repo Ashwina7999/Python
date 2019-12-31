@@ -1,0 +1,20 @@
+n=int(input())
+list1=[]
+for i in range(n):
+    a=int(input())
+    list1.append(a)
+list1=list1[0::2]    
+print("The sum of the odd position in the array is",sum(list1)) 
+
+'''
+TEST CASE 1:
+5
+1
+2
+8
+9
+3
+
+OUTPUT:
+The sum of the odd position in the array is 12
+'''
