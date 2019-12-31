@@ -1,0 +1,23 @@
+n=int(input())
+list1=[]
+list2=[]
+for i in range(1):
+    a=input().split()
+for i in a:
+    b=int(i)
+    if(b%2==0):
+        list1.append(b)
+    else:
+        list2.append(b)
+c=sorted(list1)
+d=sorted(list2)
+print(*c,*d)
+
+'''
+TEST CASE 1:
+10
+8 1 6 4 9 7 2 5 3 10
+
+OUTPUT:
+2 4 6 8 10 1 3 5 7 9
+'''
