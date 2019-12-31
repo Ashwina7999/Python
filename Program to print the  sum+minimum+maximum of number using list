@@ -1,0 +1,23 @@
+n=int(input())
+list1=[]
+for i in range(n):
+    a=int(input())
+    list1.append(a)  
+print("Maximum element: ",max(list1))
+print("Minimum element: ",min(list1))
+print("Sum of element: ",sum(list1))
+
+'''
+TEST CASE 1:
+5
+12
+43
+21
+67
+-65
+
+OUTPUT:
+Maximum element:  67
+Minimum element:  -65
+Sum of element:  78
+'''
