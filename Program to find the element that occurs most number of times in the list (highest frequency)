@@ -1,0 +1,19 @@
+n=int(input())
+list1=[]
+for i in range(n):
+    a=int(input())
+    list1.append(a)
+print(max(set(list1),key=list1.count))  
+
+'''
+TEST CASE 1:
+5
+1
+2
+2
+3
+4
+
+OUTPUT:
+2
+'''
