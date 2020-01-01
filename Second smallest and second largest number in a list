@@ -1,0 +1,22 @@
+n=int(input())
+list1=[]
+for i in range(n):
+    a=int(input())
+    list1.append(a)
+list1=sorted(list1)
+print("Second smallest element:",list1[1])
+print("Second largest element:",list1[-2])
+
+'''
+TEST CASE 1:
+5
+2
+7
+5
+1
+6
+
+OUTPUT:
+Second smallest element: 2
+Second largest element: 6
+'''
