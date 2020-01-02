@@ -1,0 +1,15 @@
+a=input().split()
+b=input()
+if(b in a):
+    print("True")
+else:
+    print("False")
+    
+'''
+TEST CASE 1:
+How are you
+you
+
+OUTPUT:
+True
+'''
