@@ -1,0 +1,20 @@
+a=input()
+letter=0
+digit=0
+for i in a:
+    if(i.isalpha()==True):
+        letter+=1
+    elif(i.isdigit()==True):
+        digit+=1
+print("Digits:",digit)
+print("Letters:",letter)
+
+
+'''
+TEST CASE 1:
+hello world!! 123
+
+OUTPUT:
+Digits: 3
+Letters: 10
+'''
