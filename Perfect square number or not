@@ -1,0 +1,22 @@
+n=int(input())
+list1=[]
+for i in range(n):
+    a=int(input())
+    for j in range(1,a//2):
+        b=j*j
+        list1.append(b)
+    if(a in list1):
+        print("Perfect square number")
+    else:
+        print("Not a perfect square number")
+
+'''
+TEST CASE 1:
+2
+64
+11
+
+OUTPUT:
+Perfect square number
+Not a perfect square number
+'''
