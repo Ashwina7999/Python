@@ -1,0 +1,11 @@
+a=input()
+a=a[0::2]
+print(a)
+
+'''
+TEST CASE 1:
+Tahaiasa
+
+OUTPUT:
+This
+'''
