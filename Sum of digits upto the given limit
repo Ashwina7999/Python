@@ -1,0 +1,38 @@
+n=int(input())
+list1=[]
+list2=[]
+for i in range(n):
+    a=int(input())
+    b=input()
+    for j in b:
+        c=int(j)
+        list1.append(c)
+    for k in range(0,a):
+        list2.append(list1[k])
+    print(sum(list2))
+    list1.clear()
+    list2.clear()
+
+'''
+TEST CASE 1:
+2
+5
+12345
+3
+123
+
+OUTPUT:
+15
+6
+
+TEST CASE 2:
+2
+5
+37654
+3
+1623
+
+OUTPUT:
+25
+9
+'''
