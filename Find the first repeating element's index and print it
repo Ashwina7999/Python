@@ -1,0 +1,64 @@
+PROGRAM 1:
+n=int(input())
+list1=[]
+list2=[]
+for i in range(n):
+    a=int(input())
+    list1.append(a)
+for j in list1:
+    b=list1.count(j)
+    if(b>1):
+        list2.append(j)
+if(len(list2)!=0):
+    if(list1[0] in list1):
+        print(list1.index(list2[0])+1)
+else:
+    print("No repeating element")
+
+
+        
+PROGRAM 2:
+n=int(input())
+list1=[]
+for i in range(n):
+    list1.append(int(input()))
+temp=0
+c=0
+if(c==0):
+    for i in range(len(list1)-1):
+        if(c==1):
+            break
+        for j in range(i+1,len(list1)):
+            if(list1[i]==list1[j]):
+                temp=list1[i]
+                c=1
+if(temp!=0):
+    print(temp)
+else:
+    print("No repeating element")
+
+'''
+TEST CASE 1:
+5
+1
+2
+3
+4
+5
+
+OUTPUT:
+No repeating element
+
+
+TEST CASE 2:
+6
+1
+2
+2
+3
+3
+4
+
+OUTPUT:
+2
+'''
