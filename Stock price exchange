@@ -1,0 +1,25 @@
+n=int(input())
+list1=[]
+list2=[]
+for i in range(n):
+    a=int(input())
+    list1.append(a)
+b=list1.index(min(list1))
+print("Day of buying :",b+1)
+for j in range(b,len(list1)):
+    list2.append(list1[j])
+c=list1.index(max(list2))
+print("Day of Selling :",c+1)
+
+'''
+TEST CASE 1:
+4
+250
+320
+190
+300
+
+OUTPUT:
+Day of buying : 3
+Day of Selling : 4
+'''
