@@ -1,0 +1,16 @@
+n=int(input())
+for i in range(n):
+    a=int(input())
+    for j in range(1,a+1):
+        b=bin(j)
+        print(b.replace("0b",''),end=" ")
+        
+'''
+TEST CASE 1:
+2
+2
+5
+
+OUTPUT:
+1 10 1 10 11 100 101
+'''
