@@ -1,0 +1,43 @@
+n=int(input())
+list1=[]
+for i in range(n):
+    a=int(input())
+    for j in range(a):
+        b=int(input())
+        list1.append(b)
+    if(len(list1)>1):
+        list1.sort()    
+        print(list1[-1]*list1[-2])
+        list1.clear()
+    else:
+        print("No pairs exists")
+
+'''
+TEST CASE 1:
+2
+5
+1
+100
+42
+4
+23
+
+OUTPUT:
+4200
+1200
+
+TEST CASE 2:
+2
+1
+7
+5
+10
+4
+7
+9
+3
+
+OUTPUT:
+No pairs exists
+90
+'''
