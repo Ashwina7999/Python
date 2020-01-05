@@ -1,0 +1,44 @@
+n=int(input())
+list1=[]
+for i in range(n):
+    a=input()
+    list1.append(a)   
+for i in list1:
+    for j in i:
+        if(j=='a'or j=='b' or j=='c'):
+            print(2,end="")
+        elif(j=='d'or j=='e' or j=='f'):
+            print(3,end="")
+        elif(j=='g'or j=='h' or j=='i'):
+            print(4,end="")
+        elif(j=='j'or j=='k' or j=='l'):
+            print(5,end="")
+        elif(j=='m'or j=='n' or j=='o'):
+            print(6,end="")    
+        elif(j=='p'or j=='q' or j=='r' or j=='s'):
+            print(7,end="")
+        elif(j=='t'or j=='u' or j=='v'):
+            print(8,end="")    
+        elif(j=='w'or j=='x' or j=='y' or j=='z'):
+            print(9,end="")
+    print()    
+
+'''
+TEST CASE 1:
+2
+ram 
+sita
+
+OUTPUT:
+726
+7482
+
+TEST CASE 2:
+2
+king
+queen
+
+OUTPUT:
+5464
+78336
+'''
