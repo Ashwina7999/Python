@@ -1,0 +1,29 @@
+n=int(input())
+list1=[]
+for i in range(n):
+    a=int(input())
+    list1.append(a)
+for i in list1:
+    if(i%3==0 and i%5==0):
+        print("FooBar")
+    elif(i%3==0):
+        print("Foo")
+    elif(i%5==0):
+        print("Bar")
+    else:
+        print("None")
+        
+'''
+TEST CASE 1:
+4
+21
+25
+30
+4
+
+OUTPUT:
+Foo
+Bar
+FooBar
+None
+'''
