@@ -1,0 +1,18 @@
+a=int(input())
+b=int(input())
+c=int(input())
+count=0
+for i in range(a,b+1):
+    if(i%c==0):
+        count+=1
+print(count)        
+
+'''
+TSET CASE 1:
+5
+15
+6
+
+OUTPUT:
+2
+'''
