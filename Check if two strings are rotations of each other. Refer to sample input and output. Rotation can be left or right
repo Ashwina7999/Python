@@ -1,0 +1,38 @@
+a=input()
+b=input()
+list1=[]
+for i in range(len(a)):
+    c=a[1:]+a[0]
+    a=c
+    list1.append(c)
+for i in range(len(a)):
+    d=a[-1]+a[0:-1]
+    a=d
+    list1.append(d)
+if(b in list1):
+    print("{} and {} are rotation of each other" .format(a,b))
+else:
+    print("Not rotation of each other")
+
+'''
+TEST CASE 1:
+Hello
+lleHo
+
+OUTPUT:
+Not rotation of each other
+
+TEST CASE 2:
+Hello
+elloH
+
+OUTPUT:
+Hello and elloH are rotation of each other
+
+TEST CASE 3:
+Hello
+oHell
+
+OUTPUT:
+Hello and oHell are rotation of each other
+'''
