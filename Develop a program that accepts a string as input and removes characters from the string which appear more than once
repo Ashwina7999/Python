@@ -1,0 +1,20 @@
+a=list(input())
+list1=[]
+for i in a:
+    if(i not in list1):
+        list1.append(i)
+print(''.join(list1))        
+
+'''
+TEST CASE 1:
+SriShakthi
+
+OUTPUT:
+Srihakt
+
+TEST CASE 2:
+ITVAC
+
+OUTPUT:
+ITVAC
+'''
