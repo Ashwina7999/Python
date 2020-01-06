@@ -1,0 +1,30 @@
+a=int(input())
+b=int(input())
+list2=[]
+for i in range(1,a+1):
+    list1=[]
+    while(i):
+        c=i%10
+        i=i//10
+        list1.append(c)
+    if(b not in list1):
+        list2.append(list1)
+d=list2[-1][::-1]
+for i in d:
+    print(i,end="")
+    
+'''
+TETS CASE 1:
+123
+2
+
+OUTPUT:
+119
+
+TEST CASE 2:
+4582
+5
+
+OUTPUT:
+4499
+'''
