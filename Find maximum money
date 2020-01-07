@@ -1,0 +1,32 @@
+n=int(input())
+for i in range(n):
+    a,b=input().split()
+    list1=[]
+    a=int(a)
+    b=int(b)
+    for j in range(1,a+1):
+        list1.append(b)
+    list1=list1[0::2]
+    print(sum(list1))
+
+'''
+TEST CASE 1:
+2
+5 10
+2 12
+
+OUTPUT:
+30
+12
+
+TEST CASE 2:
+3
+6 12
+1 10
+8 5
+
+OUTPUT:
+36
+10
+20
+'''
