@@ -1,4 +1,22 @@
-PROGRAM 1:
+PROGRAM 1: Better one
+a=input()
+b=input()
+x=0
+y=0
+for i in b:
+    b=ord(i)
+    x=x+b
+for j in a:
+    c=ord(j)
+    y=y+c
+if(x%y==0):
+    print("divisor")
+else:
+    print("Not a divisor")
+
+
+
+PROGRAM 2: Not a better one 
 a=input()
 b=input()
 if(a in b):
@@ -8,7 +26,7 @@ else:
 
 
 
-PROGRAM 2:
+PROGRAM 3: Not a better one
 a=list(input())
 b=list(input())
 if(len(a)<=len(b)):
