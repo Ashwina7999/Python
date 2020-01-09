@@ -1,0 +1,18 @@
+a=input().split()
+a.sort()
+print(' '.join(a))
+
+'''
+TEST CASE 1:
+hello, how are you?
+
+OUTPUT:
+are hello, how today? you
+
+TSRT CASE 2:
+abcde
+
+OUTPUT:
+abcde
+'''
+
