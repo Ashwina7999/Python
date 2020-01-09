@@ -1,0 +1,70 @@
+PROGRAM 1: Better one
+a=input()
+b=input()
+x=0
+y=0
+for i in b:
+    b=ord(i)
+    x=x+b
+for j in a:
+    c=ord(j)
+    y=y+c
+if(x%y==0):
+    print("divisor")
+else:
+    print("Not a divisor")
+
+
+
+PROGRAM 2: Not a better one 
+a=input()
+b=input()
+if(a in b):
+    print("divisor")
+else:
+    print("Not a divisor")
+
+
+
+PROGRAM 3: Not a better one
+a=list(input())
+b=list(input())
+if(len(a)<=len(b)):
+    list1=[]  
+    for i in a:
+        c=ord(i)
+        list1.append(c)
+    e=0    
+    for i in b:
+        d=ord(i)     
+        if(d not in list1):
+            e+=1
+    if(e==0):
+        print("divisor")
+    else:
+        print("Not a divisor")
+else:
+    print("Not a divisor")
+
+'''
+TEST CASE 1:
+ab
+abab
+
+OUTPUT:
+divisor
+
+TEST CASE 2:
+ab
+ababc
+
+OUTPUT:
+Not a divisor
+
+TSET CASE 3:
+givengiven
+given
+
+OUTPUT:
+Not a divisor
+'''
