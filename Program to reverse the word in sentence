@@ -1,0 +1,12 @@
+a=input().split()
+for i in a:
+    b=i[::-1]
+    print(b,end=" ")
+
+'''
+TEST CASE 1:
+This is a word
+
+OUTPUT:
+sihT si a drow 
+'''
