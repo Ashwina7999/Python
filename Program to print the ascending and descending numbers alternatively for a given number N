@@ -1,0 +1,26 @@
+PROGRAM 1:
+a=int(input())
+list1=[]
+for i in range(1,a+1):
+    list1.append(i)
+    b=a-i+1
+    list1.append(b)
+print(*list1)    
+
+
+PROGRAM 2:
+a=int(input())
+list1=[]
+for i in range(1,a+1):
+    list1.append(i)
+b=list1[::-1]
+for j in range(len(list1)):
+    print(list1[j],b[j],end=" ")
+
+'''
+TEST CASE 1:
+7
+
+OUTPUT:
+1 7 2 6 3 5 4 4 5 3 6 2 7 1
+'''
