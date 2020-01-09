@@ -1,0 +1,17 @@
+n=int(input())
+for i in range(n):
+    a=input()
+    print(a.title())
+
+'''
+TEST CASE 1:
+3
+This is the first
+This is the first
+This is the first
+
+OUTPUT:
+This Is The First
+This Is The First
+This Is The First
+'''
