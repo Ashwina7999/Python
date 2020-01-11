@@ -1,0 +1,12 @@
+a=input()
+b=int(a,16)
+c=bin(b)
+print("{} in Binary = {}" .format(a,c.replace("0b",'')))
+
+'''
+TSET CASE 1:
+1AC5
+
+OUTPUT:
+1AC5 in Binary = 1101011000101
+'''
