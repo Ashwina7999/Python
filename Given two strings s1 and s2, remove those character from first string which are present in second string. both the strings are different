@@ -1,0 +1,21 @@
+n=int(input())
+for i in range(n):
+    a=list(input())
+    b=list(input())
+    list1=[]
+    for j in range(len(a)):
+        if(a[j] not in b):
+            list1.append(a[j])
+    print(''.join(list1))
+'''
+TETS CASE 1:
+2
+itvaccodingteam
+caw
+removeccharaterfrom
+string
+
+OUTPUT:
+itvodingtem
+emovecchaaefom
+'''
