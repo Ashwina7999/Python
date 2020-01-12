@@ -1,4 +1,26 @@
-#Program 1
+PROGRAM 1:
+a=int(input())
+for i in range(a):
+    for j in range(a):
+        if(i==0 or i==a-1 or i+j==a-1):
+            print(j+1,end=" ")
+        else:
+            print(end="  ")
+    print()  
+
+'''
+TEST CASE 1:    
+5
+
+OUTPUT:
+1 2 3 4 5
+      4
+    3
+  2
+1 2 3 4 5 
+'''
+
+#PROGRAM 2
 
 n=int(input())
 a=1
@@ -32,7 +54,7 @@ OUTPUT:
 
 '''
 
-#Program 2
+#PROGRAM 3
 
 n=int(input())
 a=1
