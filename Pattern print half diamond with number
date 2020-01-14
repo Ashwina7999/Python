@@ -1,3 +1,20 @@
+PROGRAM 1:
+a=int(input())
+k=1
+for i in range(a):
+    for j in range(a-i):
+        print(k,end=" ")
+        k+=1
+        x=k
+    print()        
+for i in range(a,0,-1):
+    for j in range(a-i+1):
+        print(k,end=" ")
+        k+=1
+    print()
+
+
+PROGRAM 2:
 n=int(input())
 k=1
 for i in range(n,0,-1):
