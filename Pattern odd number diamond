@@ -1,3 +1,26 @@
+PROGRAM 1:
+a=int(input())
+b=input()
+for i in range(a,0,-1):
+    for j in range(i):
+        print(end=" ")
+    for k in range(a+1-i):
+        print(b,end="")
+    for l in range(k):
+        print(b,end="")    
+    print()
+for i in range(a-1,0,-1):
+    for j in range(a-i+1):
+        print(end=" ")
+    for j in range(i):
+        print(b,end="")
+    for j in range(i-1):
+        print(b,end="")
+    print()     
+
+
+
+PROGRAM 2:
 n=int(input())+1
 for i in range(n):
     for j in range(n-i-1):
@@ -17,8 +40,7 @@ for i in range(n-2,0,-1):
     print()
 
 '''
-
-OUTPUT:
+OUTPUT: 
 
 5
 
