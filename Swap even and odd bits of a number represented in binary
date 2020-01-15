@@ -1,0 +1,48 @@
+PROGRAM 1:
+a=int(input())
+b=bin(a)[2::]
+temp=0
+b=list(bin(a)[2::])
+if(b[0]!=b[1]):
+    temp=b[1]
+    b[1]=b[0]
+    b[0]=temp    
+if(b[1]!=b[2]):
+    temp=b[2]
+    b[2]=b[1]
+    b[1]=temp   
+if(b[2]!=b[3]):
+    temp=b[3]
+    b[3]=b[2]
+    b[2]=temp
+print("Enter the number{}".format(b))
+c=''.join(b)
+print(int(c,2))
+
+
+PROGRAM 2:
+a=int(input())
+b=list(bin(a)[2::])
+list1=[]
+list2=[]
+for i in range(1,len(b),2):
+    list1=b[i-1]
+    b[i-1]=b[i]
+    b[i-1]=list1
+    list2.append(b[i])
+    list2.append(b[i-1])
+print("Enter the number{}" .format(list2))    
+even=a&0xAAAAAAAA
+odd=a&0x55555555
+even>>=1
+odd<<=1
+print(even|odd)
+
+'''
+TEST CASE 1:
+14
+
+OUTPUT:
+Enter the number['1', '1', '0', '1']
+13
+'''
