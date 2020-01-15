@@ -2,7 +2,7 @@ list1=[4,3,2,1,3,4]
 list2=[]
 for i in range(len(list1)):
     b=(i+1)*-1
-    if(list1[i]==list1[b]):
+    if(list1[i]!=list1[b]):
         list2.append(list1[i])   
 if(list2[0]>=list2[-1]):
     print("yes")
