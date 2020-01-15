@@ -1,0 +1,36 @@
+a=input().split(",")
+list1=[]
+for i in a:
+    b=int(i)
+    count=0
+    for j in range(1,b+1):
+        c=j*j
+        if(c==b):
+            count+=5
+    if(b%4==0 and b%6==0):
+        count+=4
+    if(b%2==0):
+        count+=3
+    list1.append(count)
+d=zip(list1,a)
+d=sorted(d)
+for i,j in d:
+    print(j,end=" ")
+
+'''
+Given a set of numbers like we want to find sum of weights based on the following conditions
+1. 5 if a perfect square
+2. 4 if multiple of 4 and divisible by 6
+3. 3 if even number
+And sort the number based on the weights and print it as follows, Should display the numbers based on increasing order. if two numbers have the same weighted score, then  the lowest of the two number is displayed first
+
+Explanation
+The weighted score of 25 = 5(perfect squrae), 16 = 5+3, 24 = 4+3, 21 = 0, 19 = 0
+The increasing order would be 19,21,25,24,16
+
+TEST CASE 1:
+25,17,0,18
+
+OUTPUT:
+17 18 25 0
+'''
