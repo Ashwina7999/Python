@@ -1,0 +1,15 @@
+a=input()
+for i in a:
+    if(i.isdigit()==True):
+        b=int(i)+1
+        print(b,end="")
+    else:
+        print(i,end="")
+
+'''
+TEST CASE 1:
+abc123ddee456
+
+OUTPUT:
+abc234ddee567
+'''
