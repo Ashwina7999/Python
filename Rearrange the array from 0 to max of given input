@@ -1,0 +1,21 @@
+a=int(input())
+list1=[]
+b=input().split()
+for i in b:
+    c=int(i)
+    list1.append(c)
+for i in range(max(list1)+1):
+    if(i not in list1):
+        print("-1",end=" ")
+    else:
+        print(i,end=" ")
+
+'''
+Print from 0 to max of given input. if sequence number is not in that, then print -1 
+TEST CASE 1:
+6
+6 1 9 3 2 4
+
+OUTPUT:
+-1 1 2 3 4 -1 6 -1 -1 9 
+'''
