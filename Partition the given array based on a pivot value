@@ -1,0 +1,61 @@
+n=int(input())
+list1=[]
+list2=[]
+list3=[]
+list4=[]
+for i in range(n):
+    a=int(input())
+    list1.append(a)
+b=int(input())
+for i in list1:
+    if(i<b):
+        list2.append(i)
+    elif(i==b):
+        list3.append(i)
+    else:
+        list4.append(i)
+list2=sorted(list2)
+list2=list2[::-1]
+print(*list2,end=" ")
+if(len(list3)==0):
+    print(end="")
+else:    
+    print(*list3,end=" ")
+list4=sorted(list4)
+list4=list4[::-1]
+print(*list4,end="")
+
+'''
+Given a pivot x, and a list lst, partition the list into three parts. The first part part contains all element in 
+lst that are less than x. The second part contains all elements in lst that are equal to x. The third part contains all
+elements in lst that are larger than x Ordering within a part can arbitary. The algorithm sholud result in minimum swaps.
+
+For example, given x=10 and lst=[9,12,3,5,14,10,10], one partition may be [9,5,3,10,10,14,12].
+
+TEST CASE 1:
+7
+9
+12
+3
+5
+14
+10
+10
+10
+
+OUTPUT:
+9 5 3 10 10 14 12
+
+TEST CASE 2:
+6
+7
+3
+8
+4
+7
+1
+5
+
+OUTPUT:
+4 3 1 8 7 7
+'''
