@@ -1,0 +1,29 @@
+n=int(input())
+list1=[]
+for i in range(n):
+    a=int(input())
+    if(a<0):
+        a=a*-1
+        list1.append(a)
+    else:
+        list1.append(a)
+list1=sorted(list1)        
+for i in list1:
+    print(i*i,end=" ")
+    
+'''
+Given an unsorted list of integers, square the element and give the output in sorted order
+
+For example, given [-9, -2, 0, 2, 3], return [0, 4, 4, 9, 81]
+
+TEST CASE 1:
+5
+-9
+-2
+0
+2
+3
+
+OUTPUT:
+0 4 4 9 81
+'''
