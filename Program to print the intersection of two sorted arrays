@@ -1,0 +1,41 @@
+PROGRAM 1:
+a=int(input())
+b=int(input())
+c=input().split()
+d=input().split()
+for i in c:
+    if(i in d):
+        print(i,end=" ")
+
+
+PROGRAM 2:
+a=int(input())
+b=int(input())
+c=input().split()
+d=input().split()
+list1=[]
+list2=[]
+list3=[]
+for i in c:
+    x=int(i)
+    list1.append(x)
+for i in d:
+    y=int(i)
+    list2.append(y)
+for i in list1:
+    for j in list2:
+        if(i==j):
+            list3.append(i)
+temp=set(list3)
+print(*temp)
+
+'''
+TEST CASE 1:
+5
+4
+1 4 5 6 7
+2 4 6 6
+
+OUTPUT:
+4 6
+'''
