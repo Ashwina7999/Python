@@ -1,0 +1,35 @@
+from itertools import permutations
+n=int(input())
+list1=[]
+list2=[]
+list3=[]
+a=input().split()
+for i in a:
+    b=int(i)
+    list1.append(i)
+x=permutations(list1)
+for i in list(x):
+    c=str(i)
+    d=c.replace(",",'')
+    e=d.replace("(",'')
+    f=e.replace(")",'')
+    g=f.replace(" ",'')
+    h=g.replace("'",'')
+    list3.append(h)
+print(max(list3))
+                
+'''
+TSET  CASE 1:
+4 
+1 2 3 4
+
+OUTPUT:
+4321
+
+TEST CASE 2:
+4
+10 7 76 415
+
+OUTPUT:
+77641510
+'''
