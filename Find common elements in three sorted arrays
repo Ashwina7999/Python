@@ -1,0 +1,41 @@
+a=int(input())
+x=input().split()
+b=int(input())
+y=input().split()
+c=int(input())
+z=input().split()
+list1=[]
+for i in x:
+    if((i in y) and (i in z)):
+        list1.append(i)
+if(len(list1)==0):
+    print("NO Elements")
+else:
+    print(*list1)
+
+'''
+Given three arrays in non-decreasing order, print all common elements in these arrays.
+if No common elements print "No Elements"
+
+TEST CASE 1:
+6
+1 5 10 20 40 80
+5
+6 7 20 80 100
+8
+3 4 15 20 30 70 80 120
+
+OUTPUT:
+20 80
+
+TEST CASE 2:
+3
+1 2 3
+2
+4 5
+1
+6
+
+OUTPUT:
+NO Elements
+'''
