@@ -1,0 +1,43 @@
+n=int(input())
+for i in range(n):
+    a=int(input())
+    b=input().split()
+    list1=[]
+    b=sorted(b)    
+    c=b[0::2]
+    d=b[1::2]
+    for i in c:
+        for j in d:
+            b=int(j)-int(i)
+            if(b<0):
+                b=b*-1
+                list1.append(b)
+            else:
+                list1.append(b)
+    if(min(list1)==0):
+        print("Invalid value in array!!!")
+    else:
+        print(min(list1))
+   
+'''
+Given an unsorted array, find the minimum difference between any pair in given array
+
+TEST CASE 1:
+2
+5
+2 4 5 7 9
+10
+87 32 99 75 56 43 21 10 68 49
+
+OUTPUT:
+1
+6
+
+TEST CASE 2:
+1
+5
+0 0 1 2 3
+
+OUTPUT:
+Invalid value in array!!!
+'''
