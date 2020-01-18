@@ -1,0 +1,32 @@
+n=int(input())
+for i in range(n):
+    a=input()
+    b=a[::-1]
+    b=b.split()
+    b=''.join(b)
+    b=list(b)
+    n=0
+    l=list(a)
+    list1=[]
+    for i in range(len(l)):
+        if(l[i].isspace()==True):
+            list1.append(l[i])
+        else:
+            list1.append(b[n])
+            n+=1
+    print(''.join(list1))        
+    
+'''
+For example, if "I Am Not String" is the given string then the reverse of this string with preserving 
+the position os spaces is "g ni rtS toNmAI"
+
+3
+work while you work
+ITVAC ROCKS
+Never believe a stranger
+
+OUTPUT:
+krow uoyel ihw krow
+SKCOR CAVTI
+regna rtsaeve i lebreveN
+'''
