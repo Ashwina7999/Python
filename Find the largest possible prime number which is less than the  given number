@@ -1,0 +1,33 @@
+n=int(input())
+for i in range(n):
+    a=int(input())
+    list1=[]
+    for i in range(a):
+        if(i>1):
+            for j in range(2,i):
+                if(i%j==0):
+                    break
+            else:
+                list1.append(i)           
+    if(len(list1)==0):
+        print("Invalid Input")
+    else:
+        print(max(list1))
+       
+'''
+TEST CASE 1:
+1
+2
+
+OUTPUT:
+Invalid Input
+
+TEST CASE 2:
+2
+11
+7
+
+OUTPUT:
+7
+5
+'''
