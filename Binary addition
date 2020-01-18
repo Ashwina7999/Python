@@ -1,0 +1,27 @@
+Program 3:
+a=input()
+b=input()
+c=len(a)-len(b)
+d=int(a,2)+int(b,2)
+if(c>0):
+    for i in range(c):
+        print('0',end="")
+    print(bin(d)[2::],end="")
+else:        
+    print(bin(d)[2:])
+
+'''
+TEST CASE 1:
+1010
+11001
+
+OUTPUT:
+100011
+
+TEST CASE 2:
+000
+1
+
+OUTPUT:
+001
+'''
