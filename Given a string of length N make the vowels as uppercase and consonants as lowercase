@@ -1,0 +1,82 @@
+PROGRAM 1:
+a=int(input())
+for i in range(a):
+    b=list(input())
+    for i in b:
+        if(i in 'aeiouAEIOU'):
+            if(i.islower()==True):
+                d=i.upper()
+                print(d,end="")
+            else:
+                print(i,end="")
+        elif(i.isupper()==True):
+            c=i.lower()
+            print(c,end="")  
+        elif(i==" "):
+            print(i,end="")
+        else:
+            print(i,end="")
+    print()        
+        
+
+PROGRAM 2:
+a=int(input())
+for x in range(a):
+    b=input().split()
+    list1=[]
+    for i in b:
+        c=list(i)
+        d=0
+        for j in c:
+            if(j in 'aeiouAEIOU'):
+                d+=1
+        list1.append(d)
+    for i in range(len(list1)):
+        if(list1[i]==0):
+            for j in b[i]:
+                if(j.isupper()==True):
+                    e=j.lower()
+                    print(e,end="")
+                else:
+                    print(j,end="")
+            print(end=" ")
+        else:
+            for j in b[i]:
+                if(j in 'aeiouAEIOU'):
+                    if(j.islower()==True):
+                        f=j.upper()
+                        print(f,end="")
+                    else:
+                        g=j.upper()
+                        print(g,end="")
+                else:
+                    if(j.isupper()==True):
+                        h=j.lower()
+                        print(h,end="")
+                    else:
+                        print(j,end="")
+            print(end=" ")
+    print() 
+
+
+'''
+TEST CASE 1:
+2
+i like this. program very much 123
+what is this $
+
+OUTPUT:
+I lIkE thIs. prOgrAm vEry mUch 123
+whAt Is thIs $
+
+TEST CASE 2:
+3
+GSLV F11 was launched in December 19,2018
+gSlV is SateLlITe
+!$34 HelLo World!!!
+
+OUTPUT:
+gslv f11 wAs lAUnchEd In dEcEmbEr 19,2018
+gslv Is sAtEllItE
+!$34 hEllO wOrld!!!
+'''
