@@ -1,3 +1,4 @@
+PROGRAM 1:
 import collections, functools, operator
 n=int(input())
 list1=[]
@@ -27,6 +28,36 @@ for i in range(1,len(shop)+1):
     elif(shop[e]>=5000):
         x=shop[e]*0.20
         print("{}:{:.2f}".format(e,x))         
+
+PROGRAM 2:
+import collections, functools, operator
+n=int(input())
+list1=[]
+for i in range(n):
+    a=input().split(":")
+    b=a[1].split("$")
+    if(len(b)!=1):
+        for i in b:
+            i=i.strip()
+            c=i.split(" ")
+            d={c[0]:int(c[1])}
+            list1.append(d)
+shop = dict(functools.reduce(operator.add, 
+         map(collections.Counter,list1)))
+for i in range(1,len(shop)+1):
+    e="shop{}".format(i)
+    if(shop[e]>0 and shop[e]<=999):
+        x=shop[e]*0.40
+        print("{}:{:.2f}" .format(e,x))
+    elif(shop[e]>1000 and shop[e]<=2000):
+        x=shop[e]*0.33
+        print("{}:{:.2f}" .format(e,x))    
+    elif(shop[e]>2001 and shop[e]<=5000):
+        x=shop[e]*0.30
+        print("{}:{:.2f}" .format(e,x))
+    elif(shop[e]>5000):
+        x=shop[e]*0.20
+        print("{}:{:.2f}" .format(e,x))
 
 '''
 TSET CASE 1:
