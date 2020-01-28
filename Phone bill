@@ -1,0 +1,72 @@
+import collections, functools, operator 
+n=int(input())
+list1=[]
+list2=[]
+list3=[]
+list4=[]
+list5=[]
+for i in range(n):
+    a=input().split(",")
+    b = a[0]
+    h,m,s = b.split(':')
+    c = int(h)*3600 + int(m)*60 + int(s)
+    list3.append(c)
+    if(c>=0 and c<300):
+        d=c*3
+        list1.append(d)
+    elif(c==300):
+        e=(c//60)*150
+        list1.append(e)
+    elif(c>300):
+        d=c//60
+        if(c%60>0):
+            d=d+1
+        d=d*150
+        list1.append(d)
+    x = a[1]
+    y = x.split('-')
+    list2.append(''.join(y))   
+z1=list(zip(list2,list1))
+z2=list(zip(list2,list3))
+print(z2)
+for i in z1:
+    j=dict({i})
+    list4.append(j)  
+result1 = dict(functools.reduce(operator.add, 
+         map(collections.Counter, list4))) 
+print("Cents:",result1)
+for i in z2:
+    j=dict({i})
+    list5.append(j) 
+result2 = dict(functools.reduce(operator.add, 
+         map(collections.Counter, list5)))
+print("Seconds:",result2)
+if(len(set(result2.values()))==1):
+    key=result1.get(min(result1.keys()))
+    print(key)
+else:
+    sum1=0
+    for i,j in result2.items():
+        if(j!=max(result2.values())):
+            sum1+=result1.get(i)
+    print(sum1)        
+
+'''
+        if(j!=max(result2.values())):
+            sum1+=result1.get(j)
+    print(sum1)
+
+3
+00:01:07,400-234-090
+00:05:01,701-080-080
+00:05:00,400-234-090  
+  
+
+3
+00:01:07,400-234-090
+00:05:01,701-080-080
+00:05:00,400-234-090
+00:06:07,900-234-090
+00:02:01,781-080-080
+00:09:00,300-234-090
+'''
