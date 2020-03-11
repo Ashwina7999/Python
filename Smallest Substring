@@ -1,0 +1,9 @@
+m = input()
+list1 = []
+m=m.lower()
+if(len(m)>=1 and len(m)<=10000):
+    for i in range(len(m)):
+        b = m[:i+1]
+        c = list(set(b)) 
+        list1.append(len(c))
+    print(max(list1))
